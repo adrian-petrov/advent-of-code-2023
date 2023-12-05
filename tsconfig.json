@@ -1,10 +1,16 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "sourceMap": true
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
   },
   "files": ["index.ts"]
 }
