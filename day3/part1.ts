@@ -4,7 +4,7 @@ const symbolsRegex = /[^0-9.]/;
 const digitsRegex = /\d/;
 
 const result: number[] = [];
-const linesArray = fs.readFileSync('day3/input.txt', 'utf-8').split(/\n/);
+const linesArray = fs.readFileSync('day3/test-input.txt', 'utf-8').split(/\n/);
 
 // add padding
 linesArray.push(
