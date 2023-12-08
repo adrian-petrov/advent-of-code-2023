@@ -113,7 +113,7 @@ function parseMap(ptrIdx: { currMapNumbersIdx: number }, i: number, currMapIdx: 
   }
 }
 
-let minLocation = Math.min(Number.MAX_VALUE);
+let minLocation = Number.MAX_VALUE;
 seeds.forEach((seed) => {
   const soilOffset = maps['seed-to-soil'].find((map) => {
     if (map.range[0] <= +seed && +seed <= map.range[1]) {
