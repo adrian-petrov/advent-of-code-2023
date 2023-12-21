@@ -62,10 +62,6 @@ let curr: TGridItem | undefined,
 while ((curr = queue.dequeue()) !== undefined && grid[curr.row][curr.col] !== 'S') {
   const currTile = <TTile>grid[curr.row][curr.col];
 
-  if (currTile === '.') {
-    continue;
-  }
-
   const dirsAndPipes = getValidDirectionAndPipes(curr.from, currTile);
 
   if (!dirsAndPipes) {
