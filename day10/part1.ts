@@ -28,7 +28,7 @@ class Queue<T> {
   }
 
   public empty(): boolean {
-    return this._queue.length > 0;
+    return this._queue.length === 0;
   }
 }
 
